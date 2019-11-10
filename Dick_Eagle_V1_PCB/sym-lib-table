@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name PCB-rescue)(type Legacy)(uri ${KIPRJMOD}/PCB-rescue.lib)(options "")(descr ""))
-)
