@@ -11,6 +11,6 @@ Adelais/Adelais En Ciel Firmware.
 --------------------------------------------------------------------------------------------
 |xxx_adelais_standard_led_via.bin     |              |       x       |       x       |  x  |
 --------------------------------------------------------------------------------------------
-Note: x - support.
+Note: x - supported.
 
 Have nice day, thank you!
