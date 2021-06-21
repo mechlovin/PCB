@@ -1,0 +1,1 @@
+Hold Backspace and then plug in the cable. Continue to hold Backspace for 3 seconds to reset EEPROM.
