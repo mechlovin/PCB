@@ -595,11 +595,6 @@ static inline void  bootLoaderInit(void)
     
     PIN_DDR(JUMPER_PORT_ROW)  = 1;
     PIN_PORT(JUMPER_PORT_ROW) = ~(1<< PIN(JUMPER_PORT_ROW, JUMPER_BIT_ROW)); 
-
-//    DDRB  &= ~0b01000000; // PB6 low for input (COL)
-//    PORTB |=  0b01000000; // PB6 high for pull-up (COL)
-//    DDRB  |=  0b10000000; // PB7 high for output (ROW)
-//    PORTB &= ~0b10000000; // PB7 low (ROW)
 #endif
 
 //     deactivated by Stephan - reset after each avrdude op is annoing!
