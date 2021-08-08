@@ -593,7 +593,7 @@ static inline void  bootLoaderInit(void)
     PIN_DDR(JUMPER_PORT_COL)  = 0;
     PIN_PORT(JUMPER_PORT_COL) = (1<< PIN(JUMPER_PORT_COL, JUMPER_BIT_COL)); 
     
-    PIN_DDR(JUMPER_PORT_ROW)  = 1;
+    PIN_DDR(JUMPER_PORT_ROW)  = 0xFF;
     PIN_PORT(JUMPER_PORT_ROW) = ~(1<< PIN(JUMPER_PORT_ROW, JUMPER_BIT_ROW)); 
 #endif
 
