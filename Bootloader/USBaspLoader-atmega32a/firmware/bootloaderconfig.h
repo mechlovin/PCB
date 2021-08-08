@@ -85,6 +85,8 @@ these macros are defined, the boot loader usees them.
  * to interrupt pin INT0!
  */
 #ifndef JUMPER_PORT
+  #define JUMPER_PORT_COL		B
+  #define JUMPER_PORT_ROW	  A
 #endif
 /* 
  * jumper is connected to this port
@@ -92,6 +94,8 @@ these macros are defined, the boot loader usees them.
 #ifndef JUMPER_BIT
   /* This is Revision 3 and later (where PD6 and PD7 were swapped */
   // #define JUMPER_BIT           7       /* Rev.2 and previous was 7 */
+  #define JUMPER_BIT_COL           1
+  #define JUMPER_BIT_ROW           0
 #endif
 /* 
  * jumper is connected to this bit in port "JUMPER_PORT", active low
@@ -586,10 +590,16 @@ static inline void  bootLoaderInit(void)
 {
 #if (BOOTLOADER_IGNOREPROGBUTTON)
 #else
-    DDRB  &= ~0b01000000; // PB6 low for input (COL)
-    PORTB |=  0b01000000; // PB6 high for pull-up (COL)
-    DDRB  |=  0b10000000; // PB7 high for output (ROW)
-    PORTB &= ~0b10000000; // PB7 low (ROW)
+    PIN_DDR(JUMPER_PORT_COL)  = 0;
+    PIN_PORT(JUMPER_PORT_COL) = (1<< PIN(JUMPER_PORT_COL, JUMPER_BIT_COL)); 
+    
+    PIN_DDR(JUMPER_PORT_ROW)  = 1;
+    PIN_PORT(JUMPER_PORT_ROW) = ~(1<< PIN(JUMPER_PORT_ROW, JUMPER_BIT_ROW)); 
+
+//    DDRB  &= ~0b01000000; // PB6 low for input (COL)
+//    PORTB |=  0b01000000; // PB6 high for pull-up (COL)
+//    DDRB  |=  0b10000000; // PB7 high for output (ROW)
+//    PORTB &= ~0b10000000; // PB7 low (ROW)
 #endif
 
 //     deactivated by Stephan - reset after each avrdude op is annoing!
@@ -601,6 +611,7 @@ static inline void  bootLoaderExit(void)
 {
 #if (BOOTLOADER_IGNOREPROGBUTTON)
 #else
+    PIN_PORT(JUMPER_PORT_COL) = 0;		/* undo bootLoaderInit() changes */
 #endif
 }
 
@@ -608,7 +619,7 @@ static inline void  bootLoaderExit(void)
 #if (BOOTLOADER_IGNOREPROGBUTTON)
 #	define bootLoaderConditionSimple()	(false)
 #else
-#	define bootLoaderConditionSimple()	((PINB & (1 << 6)) == 0)
+#	define bootLoaderConditionSimple()	((PIN_PIN(JUMPER_PORT_COL) & (1 << PIN(JUMPER_PORT_COL, JUMPER_BIT_COL))) == 0)
 #endif
 #if (HAVE_BOOTLOADERENTRY_FROMSOFTWARE)
 /*
