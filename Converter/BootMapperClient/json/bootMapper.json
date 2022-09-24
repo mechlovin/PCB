@@ -1,0 +1,129 @@
+{
+    "targetDataArr": [
+        {
+            "ver": 140513,
+            "targetName" : "ps2avrGB & ps2avrGB_split",
+            "fileName" : "keymap_gb_",
+            "fileExt" : ".hex",
+            "startAddress": "6500",
+            "startOffset": 0,
+            "layerNames" : ["Normal","FN","FN2"],
+            "layers": 3,
+            "columns": 8,
+            "rows": 16
+        },
+         {
+            "ver": 160502,
+            "targetName" : "ps2avrGB4U & ps2avrgb4U_split",
+            "fileName" : "keymap_gb4u_",
+            "fileExt" : ".hex",
+            "startAddress": "6500",
+            "startOffset": 0,
+            "layerNames" : ["Normal","FN","FN2","FN3"],
+            "layers": 4,
+            "columns": 8,
+            "rows": 17
+        },
+         {
+            "ver": 170125,
+            "targetName" : "ps2avrGB4U_AIKON",
+            "fileName" : "keymap_gb4u_a_",
+            "fileExt" : ".hex",
+            "startAddress": "6500",
+            "startOffset": 0,
+            "layerNames" : ["Normal","FN","FN2","FN3"],
+            "layers": 4,
+            "columns": 8,
+            "rows": 18
+        },
+         {
+            "ver": 131202,
+            "targetName" : "ps2avrU & ps2avrU_split",
+            "fileName" : "keymap_part_",
+            "fileExt" : ".hex",
+            "startAddress": "6500",
+            "startOffset": 0,
+            "layerNames" : ["Normal","FN","FN2","FN3"],
+            "layers": 4,
+            "columns": 8,
+            "rows": 17
+        },
+        {
+            "ver": 140116,
+            "targetName" : "ps2avrU for AIKON",
+            "fileName" : "keymap_part_for_aikon_",
+            "fileExt" : ".hex",
+            "startAddress": "6500",
+            "startOffset": 0,
+            "layerNames" : ["Normal","FN","FN2","FN3"],
+            "layers": 4,
+            "columns": 8,
+            "rows": 18
+        }
+    ],
+    "qmacroConfigArr": [
+        {
+            "targetName" : "ps2avrGB",
+            "fileName" : "quick_macro_gb_",
+            "fileExt" : ".json",
+            "macroNum" : 12,
+            "macroLength" : 48
+        }, 
+        {
+            "targetName" : "ps2avrGB4U",
+            "fileName" : "quick_macro_gb4u_",
+            "fileExt" : ".json",
+            "macroNum" : 12,
+            "macroLength" : 48
+        }
+    ],
+    "macroConfigArr": [
+        {
+            "targetName" : "ps2avrGB",
+            "fileName" : "macro_gb_",
+            "fileExt" : ".hex",
+            "startAddress": "6800",
+            "macroNum" : 12,
+            "macroLength" : 168
+        }, 
+        {
+            "targetName" : "ps2avrGB4U",
+            "fileName" : "macro_gb4u_",
+            "fileExt" : ".hex",
+            "startAddress": "6800",
+            "macroNum" : 12,
+            "macroLength" : 168
+        }, 
+        {
+            "targetName" : "ps2avrU",
+            "fileName" : "macro_",
+            "fileExt" : ".hex",
+            "startAddress": "6800",
+            "macroNum" : 12,
+            "macroLength" : 168
+        }
+    ],
+    "dualactionConfigArr": [
+        {
+            "targetName" : "ps2avrGB",
+            "fileName" : "dualaction_gb_",
+            "fileExt" : ".hex",
+            "startAddress": "6580",
+            "dualactionNum" : 24
+        }, 
+        {
+            "targetName" : "ps2avrGB4U",
+            "fileName" : "dualaction_gb4u_",
+            "fileExt" : ".hex",
+            "startAddress": "6480",
+            "dualactionNum" : 24
+        }, 
+        {
+            "targetName" : "ps2avrU",
+            "fileName" : "dualaction_",
+            "fileExt" : ".hex",
+            "startAddress": "6480",
+            "dualactionNum" : 24
+        }
+    ]
+}
