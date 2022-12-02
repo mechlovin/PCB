@@ -175,8 +175,8 @@
     "matrix": {"rows": 5, "cols": 15},
     "layouts": {
       "labels": [
-          "Split Back Space",
-          "Split Right Shift",
+          "Back Space 2U",
+          "Right Shift 2.75U",
           "Split Space" 
       ],
       "keymap": [
