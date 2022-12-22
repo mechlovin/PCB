@@ -177,12 +177,20 @@
       "labels": [
           "Back Space 2U",
           "Right Shift 2.75U",
-          "Split Space" 
+          "Split Space",
+          "Encoder" 
       ],
       "keymap": [
         [
           {
-            "y": 0.15,
+            "x": 0.5,
+            "c": "#777777"
+          },
+          "3,1\n\n\n3,1\n\n\n\n\n\ne0"
+        ],
+        [
+          {
+            "y": -0.85,
             "x": 15.15,
             "c": "#aaaaaa",
             "w": 2
@@ -194,7 +202,7 @@
             "x": 0.55,
             "c": "#777777"
           },
-          "3,1\n\n\n\n\n\n\n\n\ne0"
+          "3,1\n\n\n3,0"
         ],
         [
           {
