@@ -83,7 +83,17 @@
               "label": "Color",
               "type": "color",
               "content": ["id_qmk_rgblight_color", 2, 4]
-            }
+            },
+            {        
+            "label": "Toggle Logo RGB",
+            "type": "toggle",
+            "content": ["id_rgblight_logo_toggle", 0, 1]
+          },
+          {
+            "label": "Toggle Underglow RGB",
+            "type": "toggle",
+            "content": ["id_rgblight_ug_toggle", 0, 2]
+          }
           ]
         }
       ]
