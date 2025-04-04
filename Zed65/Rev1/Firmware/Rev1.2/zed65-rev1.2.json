@@ -3,11 +3,10 @@
   "vendorId": "0x4D4C",
   "productId": "0x6505",
   "keycodes": ["qmk_lighting"],
-  "customKeycodes": [
-    {"name": "WS2812 LED ON", "title": "WS2812 ON", "shortName": "WS2812 ON"},
-    {"name": "LOGO LED OFF", "title": "Logo OFF", "shortName": "Logo OFF"},
-    {"name": "UG LED OFF", "title": "UG OFF", "shortName": "UG OFF"}
-  ],
+"customKeycodes": [
+    {"name": "RGB_TOGGLE_LOGO", "title": "Logo TOG", "shortName": "CUSTOM(0)"},
+    {"name": "RGB_TOGGLE_UG", "title": "UG TOG", "shortName": "CUSTOM(1)"}
+],
   "menus": [
     {
       "label": "Lighting",
