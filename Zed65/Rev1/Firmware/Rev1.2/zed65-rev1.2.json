@@ -2,7 +2,7 @@
   "name": "Zed65 Rev.1",
   "vendorId": "0x4D4C",
   "productId": "0x6505",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_rgblight_keycodes"],
 "customKeycodes": [
     {"name": "RGB_TOGGLE_LOGO", "title": "Logo TOG", "shortName": "CUSTOM(0)"},
     {"name": "RGB_TOGGLE_UG", "title": "UG TOG", "shortName": "CUSTOM(1)"}

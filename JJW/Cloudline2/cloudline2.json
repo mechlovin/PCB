@@ -2,7 +2,7 @@
   "name": "Cloudline2",
   "vendorId": "0x4D4C",
   "productId": "0xC870",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_rgb_matrix_keycodes"],
   "menus": [
     {
       "label": "Lighting",

@@ -2,7 +2,7 @@
   "name": "Olly BB",
   "vendorId": "0x4D4C",
   "productId": "0xD183",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_backlight_rgblight_keycodes"],
   "menus": [
     {
       "label": "Lighting",

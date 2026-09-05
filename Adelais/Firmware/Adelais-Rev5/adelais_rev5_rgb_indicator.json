@@ -2,7 +2,7 @@
   "name": "Adelais Rev. 5",
   "vendorId": "0x4D4C",
   "productId": "0xAD05",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_backlight_rgblight_keycodes"],
   "menus": [
     {
       "label": "Lighting",

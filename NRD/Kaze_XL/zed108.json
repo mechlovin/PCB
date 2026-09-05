@@ -2,7 +2,7 @@
   "name": "Zed108",
   "vendorId": "0x4D4C",
   "productId": "0x1080",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_rgblight_keycodes"],
   "customKeycodes": [
     {"name": "WS2812 LED ON", "title": "WS2812 ON", "shortName": "WS2812 ON"},
     {"name": "LOGO LED OFF", "title": "Logo OFF", "shortName": "Logo OFF"},

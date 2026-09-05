@@ -2,7 +2,7 @@
     "name": "Zed65 RGB",
     "vendorId": "0x4D4C",
     "productId": "0x6510",
-    "keycodes": ["qmk_lighting"],
+    "keycodes": ["qmk_rgblight_keycodes", "qmk_rgb_matrix_keycodes"],
     "menus": [
       {
         "label": "Lighting",

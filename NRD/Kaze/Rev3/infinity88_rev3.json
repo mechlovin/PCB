@@ -2,7 +2,7 @@
   "name": "Infinity 88",
   "vendorId": "0x4D4C",
   "productId": "0x8802",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_backlight_rgblight_keycodes"],
   "customKeycodes": [
     {"name": "RGBLOGO_TG", "title": "Logo TOG", "shortName": "RGBLOGO_TG"},
     {"name": "RGBUG_TG", "title": "UG TOG", "shortName": "RGBUG_TG"}

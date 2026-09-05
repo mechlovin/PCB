@@ -2,7 +2,7 @@
   "name": "Ghost CP Rev. 1",
   "vendorId": "0x6C7A",
   "productId": "0x0180",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_backlight_rgblight_keycodes"],
 "menus": [
   {
     "label": "Lighting",

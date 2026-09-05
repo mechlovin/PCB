@@ -2,7 +2,7 @@
   "name": "Zed75-TOMO",
   "vendorId": "0x4D4C",
   "productId": "0x7520",
-  "keycodes": ["qmk_lighting"],
+  "keycodes": ["qmk_rgblight_keycodes"],
   "menus": [
     {
       "label": "Lighting",
